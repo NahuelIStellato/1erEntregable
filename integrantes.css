@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+html{height:  100%;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding: 1rem;
+}
+
+section {
+    flex: 0 0 calc(48% - 2%);
+    margin: 1% 0;
+    box-sizing: border-box;
+}
+
+.imagenperfil {
+    width: 100%;
+    height: auto;
+    max-width: 16rem;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #009E3F;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 2rem;
+    user-select: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar-icono {
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+.navbar-links {
+    border-radius: 7%;
+    font-size: 1.25rem;
+}
+
+.navbar-links:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar-links:hover a {
+    color: #009E3F;
+    transition: 0.5s;
+}
+
+@media (max-width: 550px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    .navbar-icono {
+        display: block;
+    }
+    .navbar-links {
+        border-radius: 0%;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar.active .navbar-links {
+        display: block;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer p {
+        display: none;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    background-color: #009E3F;
+    color: white;
+}
+
+footer img {
+    width: 7rem;
+    height: auto;
+    margin-right: 0.5%;
+}
+
+footer p {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    margin-left: 0.5%;
+}
+
+footer a{
+    text-decoration: none;
+}
