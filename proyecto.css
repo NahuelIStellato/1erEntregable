@@ -8,7 +8,7 @@ header{
     padding-left: 50px;
 }
 
-@media(max-width: 550px){
+@media(max-width: 640px){
     
     header{
         display: block;

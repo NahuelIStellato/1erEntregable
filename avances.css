@@ -9,32 +9,24 @@ html{height:  100%;}
 }
 
 body {
+    background-color:white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: center;
-    padding: 1rem;
-}
-
-section {
-    flex: 0 0 calc(48% - 2%);
-    margin: 1% 0;
-    box-sizing: border-box;
-}
-
-.imagenperfil {
+header {
     width: 100%;
+    margin: 0px;
+    position: relative;
     height: auto;
-    max-width: 16rem;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #009E3F;
 }
 
 .navbar ul {
@@ -128,8 +120,4 @@ footer p {
     font-size: 1.25rem;
     font-weight: bolder;
     margin-left: 0.5%;
-}
-
-footer a{
-    text-decoration: none;
 }
