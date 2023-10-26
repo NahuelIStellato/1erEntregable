@@ -1,32 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
-
 html{height:  100%;}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-}
-
-body {
-    background-color:white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    width: 100%;
-    margin: 0px;
-    position: relative;
-    height: auto;
-}
-
-
-footer {
-    width: 100%;
-    margin-top: auto;
-    background-color: #009E3F;
 }
 
 .navbar ul {
@@ -76,6 +53,149 @@ footer {
     transition: 0.5s;
 }
 
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Agregamos margen cero para evitar el espacio predeterminado del body */
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 2; /* Aseguramos que el header esté sobre el contenido principal */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Esto permite que el contenido principal crezca para ocupar el espacio disponible */
+    text-align: center;
+    margin-top: 2rem; /* Agregamos margen superior para dar espacio al navbar */
+    margin-bottom: 2rem; /* Agregamos margen inferior para dar espacio al footer */
+}
+
+
+#h1x {
+
+    color: white;
+    font-family:Georgia;
+    font-weight:bolder;
+    text-align: left;
+    font-size: 40px;
+}
+
+a {
+
+    color: white;
+    font-family:Georgia;
+    font-weight:bolder;
+    
+
+}
+
+
+
+h1 {
+
+    font-size: 50px;
+    font-family:Georgia;
+    font-weight:bolder;
+
+ 
+
+} 
+
+h2 {
+    font-size: 35px;
+    font-family:Georgia;
+    font-weight: bold;
+    color: #009E3F;
+    
+}
+
+
+#p1 { 
+
+    background: #009E3F;
+    color: white;
+}
+
+#P2 {
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    background: #009E3F;
+    color: white;
+    border: 1px;
+    border-color: #009E3F;
+    border-radius: 1px;
+}
+
+.hh1 h1 {
+
+    color: black;
+
+
+
+
+}
+
+.hh1 h2 {
+
+    color: #009E3F;
+
+
+
+
+}
+
+.container {
+
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia;
+
+   
+}
+
+.menu li {
+    list-style: none;
+    color: #009E3F;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    background-color: #009E3F;
+    color: white;
+    position: relative;
+    z-index: 2; /* Aseguramos que el footer esté sobre el contenido principal */
+}
+
+footer img {
+    width: 7rem;
+    height: auto;
+    margin-right: 0.5%;
+}
+
+footer p {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    margin-left: 0.5%;
+}
+
 @media (max-width: 640px) {
     .navbar ul {
         flex-wrap: wrap;
@@ -95,29 +215,9 @@ footer {
     footer {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 0.5rem; /* Ajustamos el margen inferior */
     }
     footer p {
         display: none;
     }
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; 
-    background-color: #009E3F;
-    color: white;
-}
-
-footer img {
-    width: 7rem;
-    height: auto;
-    margin-right: 0.5%;
-}
-
-footer p {
-    font-size: 1.25rem;
-    font-weight: bolder;
-    margin-left: 0.5%;
 }
