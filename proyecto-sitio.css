@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
-html {
-    height: 100%;
-}
-
+html{height:  100%;}
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +8,54 @@ html {
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     width: 100%;
+    margin: 0px;
     position: relative;
     height: auto;
-    z-index: 2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.titulo {
+    color: black;
+    margin-top: 2.25rem;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.link {
+    color: #009E3F;
+    margin-top: 1.75rem;
+    font-size: 2rem;
+
+}
+
+.video {
+    margin-top: 1.75rem;
+    border: 10px solid #009E3F;
+    border-radius: 3%;
+    width: 700px;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #009E3F;
 }
 
 .navbar ul {
@@ -66,6 +106,13 @@ header {
 }
 
 @media (max-width: 860px) {
+    .video {
+        width: 350px;
+        height: 200px;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -84,95 +131,10 @@ header {
     footer {
         flex-direction: column;
         text-align: center;
-        margin-bottom: 0.5rem;
     }
     footer p {
         display: none;
     }
-}
-
-.texto6{
-    color: #009E3F;
-    text-decoration: underline;
-}
-
-.contenedor{
-    font-size: 40px;
-}
-
-.texto5{
-    font-size: 5rem;
-    padding-bottom: 2%;
-    text-decoration: underline;
-}
-
-.texto2{
-    color: #009E3F;
-    text-decoration: underline;
-    font-size: 4.5rem;
-}
-
-.texto1{
-    color: #009E3F;
-    font-size: 50px;
-    text-align: center;
-    
-}
-
-.texto3{
-    font-size: 2rem;
-    font-weight: bolder;
-    color: white;
-
-}
-
-body {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0; 
-}
-
-.estructura{
-text-align: center;
-font-size: 20px;
-}
-
-.logo{
-    margin-top: 0.5%;
-    width: 100%;
-    height: auto;
-    max-width: 20rem;
-}
-
-.paleta {
-    background-color: darkgrey;
-    padding: 1.5%;
-    width: 100%;
-    height: auto;
-    max-width: 45rem;
-}
-
-.arbol {
-    width: 100%;
-    height: auto;
-    max-width: 75rem;
-}
-
-span {
-    color: #009E3F;
-}
-
-.texto{
-    text-align: left;
-    background-color:#008000;
-    border-style: solid;
-    border-radius: 30px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;
-    color: white;
 }
 
 footer {
@@ -182,8 +144,6 @@ footer {
     padding: 1rem; 
     background-color: #009E3F;
     color: white;
-    position: relative;
-    z-index: 2; 
 }
 
 footer img {

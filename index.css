@@ -109,7 +109,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
     .navbar ul {
         flex-wrap: wrap;
     }
